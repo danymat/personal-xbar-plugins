@@ -15,7 +15,7 @@
 
 export PATH='/usr/local/bin:/usr/bin:/bin:$PATH'
 
-YNAB_TOKEN="token"
+YNAB_TOKEN="d5c8fcb306495ba3757ddd4903653698f426ad56aed05a6a6fa0fad7e61400d4"
 BUDGET_NUMBER="1"
 today=$(date "+%Y-%m-%d")
 
@@ -31,4 +31,8 @@ transactions=$(eval $execute_command $uri_get_transactions)
 
 # echo salut
 echo $transactions | jq '.data.transactions[] | select(.date == "'$today'") | {amount}' | jq '.amount' | awk '{sum+=$0} END{print sum/1000, "€"}'
-
+echo "---"
+uri_get_months="https://api.youneedabudget.com/v1/budgets/$budget_id/months"
+months=$(eval $execute_command $uri_get_months)
+spend_this_month=$(echo $months | jq '.data.months[] | select (.month == "2021-03-01") | .activity/1000')
+echo This month: $spend_this_month €
