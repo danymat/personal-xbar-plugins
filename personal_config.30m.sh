@@ -7,7 +7,7 @@
 #  <xbar.author>Daniel Mathiot</xbar.author>
 #  <xbar.author.github>danymat</xbar.author.github>
 #  <xbar.desc>Display the personal user configs such as hyper keys in skhd</xbar.desc>
-#  <xbar.image>http://www.hosted-somewhere/pluginimage</xbar.image>
+#  <xbar.image>https://raw.githubusercontent.com/danymat/personal-xbar-plugins/53ae1fde8337216174ebcad4ba42870d5bcfbb1a/images/config_2021_03_30.png</xbar.image>
 #  <xbar.var>string(SKHD_LOCATION="/Users/danielmathiot/.config/skhd/"): The location of your skhd config file.</xbar.var>
 #  <xbar.var>string(ICON_NAVBAR="⛏"): Navbar icon.</xbar.var>
 #  <xbar.var>string(ICON_COMMANDS="🛠"): Icon for the skhd commands .</xbar.var>

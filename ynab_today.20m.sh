@@ -8,7 +8,7 @@
 #  <xbar.author>Daniel Mathiot</xbar.author>
 #  <xbar.author.github>danymat</xbar.author.github>
 #  <xbar.desc>Display the amount earned today</xbar.desc>
-#  <xbar.image></xbar.image>
+#  <xbar.image>https://raw.githubusercontent.com/danymat/personal-xbar-plugins/main/images/ynab_2021_03_30.png</xbar.image>
 #  <xbar.dependencies>jq, curl</xbar.dependencies>
 #  <xbar.var>string(YNAB_TOKEN=""): API key to get access to remote data.</xbar.var>
 #  <xbar.var>string(BUDGET_NUMBER="1"): The budget number for your YNAB account.</xbar.var>
