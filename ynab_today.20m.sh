@@ -3,7 +3,7 @@
 
 # Metadata allows your plugin to show up in the app, and website.
 #
-#  <xbar.title>Ynab sum</xbar.title>
+#  <xbar.title>Today's YNAB</xbar.title>
 #  <xbar.version>v1.0</xbar.version>
 #  <xbar.author>Daniel Mathiot</xbar.author>
 #  <xbar.author.github>danymat</xbar.author.github>
@@ -11,15 +11,14 @@
 #  <xbar.image></xbar.image>
 #  <xbar.dependencies>jq, curl</xbar.dependencies>
 #  <xbar.var>string(YNAB_TOKEN=""): API key to get access to remote data.</xbar.var>
+#  <xbar.var>string(BUDGET_NUMBER="1"): The budget number for your YNAB account.</xbar.var>
 #  <xbar.abouturl></xbar.abouturl>
 
 export PATH='/usr/local/bin:/usr/bin:/bin:$PATH'
 
-YNAB_TOKEN="test"
-BUDGET_NUMBER="1"
 ICON_MONEY_FLIES="💸"
 ICON_AGE_OF_MONEY="🍃"
-ICON_YNAB="💰"
+ICON_YNAB="Ynab: "
 #####
 
 today=$(date "+%Y-%m-%d")
