@@ -6,7 +6,7 @@
 
 ## Vault Counter
 
-![](images/obsidian_2021_03_30.png)
+![](https://media.giphy.com/media/kqx5EmOpNoXbxD40il/giphy.gif)
 
 ## Config files
 
