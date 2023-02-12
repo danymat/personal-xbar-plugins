@@ -17,6 +17,7 @@
 
 ICON_MONEY_FLIES="💸"
 ICON_AGE_OF_MONEY="🍃"
+ICON_TODAY="💰"
 ICON_YNAB="Ynab"
 jq=$JQ_PATH
 #####
@@ -45,6 +46,6 @@ age_of_money=$(echo $json_this_month | $jq -r '.age_of_money' )
 echo "$ICON_YNAB"
 echo "---"
 
-echo "Today: $ynab_today"
+echo "$ICON_TODAY Today: $ynab_today"
 echo $ICON_MONEY_FLIES This month: $spend_this_month €
 echo $ICON_AGE_OF_MONEY Age of money: $age_of_money days
