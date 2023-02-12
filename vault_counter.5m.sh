@@ -12,7 +12,6 @@
 #  <xbar.dependencies></xbar.dependencies>
 #  <xbar.abouturl></xbar.abouturl>
 
-vault="/Users/danielmathiot/Documents/000 Meta/00.01 NewBrain" # Full path to vault
 number_notes=$(ls -p "$vault" | grep -v / | wc -l)
 vault_name_uri=$(echo $vault | sed -e 's:.*/::' -e 's/ /%20/g')
 files_todos=$(grep -R --exclude-dir=.obsidian TODO "$vault" | cut -d ':' -f 1 | uniq | sed -e 's/.*\///g' -e "s|^|$vault/|g")
@@ -33,10 +32,5 @@ do
     [ -n "${todos_comment2}" ] && echo ${todos_comment2}
 done <<< "$files_todos"
 echo "---"
-# while read -r file ; do
-#     echo "salut$file"
-#     # todos=$(grep 'TODO' "$file" | sed -e 's/^[^%]*%*TODO: /--/g' -e 's/%%//g') # keep only what inside %%TODO: %%)
-#     # echo "$todos"
-# done < "$files_todos"
 
 echo "Open Obsidian vault | href=obsidian://open?vault=$vault_name_uri"
